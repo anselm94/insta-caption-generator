@@ -2,6 +2,10 @@
 
 A simple [Streamlit](https://streamlit.io/) Python application to generate interesting Instagram Captions based on images uploaded, using [Google Gemini](https://deepmind.google/technologies/gemini/)
 
+**Demo**: https://insta-caption-generator.streamlit.app/ 
+
+---
+
 ![Screen recording](./docs/screengrab-1.gif)
 
 ## Usage

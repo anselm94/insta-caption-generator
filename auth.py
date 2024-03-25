@@ -10,6 +10,7 @@ load_dotenv()
 # Set environment variables
 CLIENT_ID = os.environ.get("GOOGLE_CLIENT_ID")
 CLIENT_SECRET = os.environ.get("GOOGLE_CLIENT_SECRET")
+REDIRECT_URI = os.environ.get("REDIRECT_URI")
 AUTHORIZE_ENDPOINT = "https://accounts.google.com/o/oauth2/v2/auth"
 TOKEN_ENDPOINT = "https://oauth2.googleapis.com/token"
 REVOKE_ENDPOINT = "https://oauth2.googleapis.com/revoke"
@@ -35,7 +36,7 @@ def show_login():
     result = but_oauth2_google.authorize_button(
         name="Continue with Google",
         icon="https://www.google.com.tw/favicon.ico",
-        redirect_uri="http://localhost:8501",
+        redirect_uri=REDIRECT_URI,
         scope="openid email profile",
         key="google",
         extras_params={"prompt": "consent", "access_type": "offline"},
