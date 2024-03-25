@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "streamlit-insta-captioner"
+version = "0.1.0"
+description = "Google-Gemini based Instagram Post Captioner"
+authors = ["Merbin J Anselm <merbinjanselm@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.32.2"
+dotenv = "^0.0.5"
+streamlit-oauth = "^0.1.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
